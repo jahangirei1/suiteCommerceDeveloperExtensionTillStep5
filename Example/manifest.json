@@ -1,0 +1,60 @@
+{
+    "name": "Example",
+    "fantasyName": "Developers Documentation",
+    "vendor": "ExampleVendor",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.2.0",
+        "SCS": ">=20.2.0"
+    },
+    "version": "1.0.0",
+    "description": "An example extension to demonstrate SuiteCommerce customizations",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/developersDoc/Templates/example_developersDoc_list.tpl",
+                    "Modules/developersDoc/Templates/example_developersDoc_form.tpl",
+                    "Modules/developersDoc/Templates/example_developersDoc_edit.tpl",
+                    "Modules/developersDoc/Templates/example_developersDoc_collection.tpl",
+                    "Modules/developersDoc/Templates/example_developersDoc_details.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/developersDoc/JavaScript/Example.developersDoc.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.List.View.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Model.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Edit.View.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Form.View.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Helper.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Collection.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Collection.View.js",
+                    "Modules/developersDoc/JavaScript/Example.developersDoc.Details.View.js"
+                ]
+            }
+        }
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/developersDoc/SuiteScript2/Example.developersDoc.Model.js",
+            "Modules/developersDoc/SuiteScript2/Example.developersDoc.Service.ss"
+        ]
+    }
+}
